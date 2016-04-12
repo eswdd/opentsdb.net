@@ -94,6 +94,10 @@
 <li><a class="reference internal" href="#id7">Plugins</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#latency-stats-plugin">Latency Stats Plugin</a><ul>
+<li><a class="reference internal" href="#id8">Plugins</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -214,6 +218,15 @@
 <h2>HTTP RPC Plugin</h2>
 <p>This is an interface used to implement additional HTTP API endpoints for OpenTSDB. (v2.2)</p>
 <div class="section" id="id7">
+<h3>Plugins</h3>
+<p>No implementations at this time.</p>
+</div>
+</div>
+<div class="section" id="latency-stats-plugin">
+<h2>Latency Stats Plugin</h2>
+<p>OpenTSDB gathers and records timing statistics covering HTTP requests and interactions with HBase. This interface provides a mechanism to allow administrators to use alternative implementations for calculating these statistics and supports both in-process calculation (as per the default, which calculates an approximation using a tailored histogram which gives good granularity for lower values while still allowing a rough classification for the "long tail" of larger values) as well as enabling out-of-process calculation (e.g. via StatsD). (v2.3)</p>
+<p>The plugin configuration allows specification of a different implementation for each individual latency statistic as well as a global default.</p>
+<div class="section" id="id8">
 <h3>Plugins</h3>
 <p>No implementations at this time.</p>
 </div>

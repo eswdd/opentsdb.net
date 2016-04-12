@@ -351,6 +351,48 @@ E.g. /opt/opentsdb/staticroot</td>
 <td>&nbsp;</td>
 <td>--staticroot</td>
 </tr>
+<tr class="row-even"><td>tsd.latency_stats.plugin <em>(2.3)</em></td>
+<td>String</td>
+<td>Optional</td>
+<td>Full class name of the global latency stats plugin to use. If a plugin is not specified then a TSD will revert to an internal default.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>tsd.latency_stats.plugin.hbase_put <em>(2.3)</em></td>
+<td>String</td>
+<td>Optional</td>
+<td>Full class name of the latency stats plugin to use for hbase put timings. Specify this if you wish to use an implementation different from the global one for these specific statistics.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>tsd.latency_stats.plugin.hbase_scan <em>(2.3)</em></td>
+<td>String</td>
+<td>Optional</td>
+<td>Full class name of the latency stats plugin to use for hbase scan timings. Specify this if you wish to use an implementation different from the global one for these specific statistics.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>tsd.latency_stats.plugin.http_all <em>(2.3)</em></td>
+<td>String</td>
+<td>Optional</td>
+<td>Full class name of the latency stats plugin to use for http request timings. Specify this if you wish to use an implementation different from the global one for these specific statistics.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>tsd.latency_stats.plugin.http_gnuplot <em>(2.3)</em></td>
+<td>String</td>
+<td>Optional</td>
+<td>Full class name of the latency stats plugin to use for http gnuplot request timings. Specify this if you wish to use an implementation different from the global one for these specific statistics.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>tsd.latency_stats.plugin.http_graph <em>(2.3)</em></td>
+<td>String</td>
+<td>Optional</td>
+<td>Full class name of the latency stats plugin to use for http graph request timings. Specify this if you wish to use an implementation different from the global one for these specific statistics.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
 <tr class="row-even"><td>tsd.mode <em>(2.1)</em></td>
 <td>String</td>
 <td>Optional</td>
